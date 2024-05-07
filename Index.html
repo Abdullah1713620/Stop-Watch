@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body {
+          background-image: url('./Assests/bg.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>        
+</head>
+<body>
+    <h1 style="font-style: italic; font-family: fantasy; color: #FFF; text-decoration: underline;">STOP WATCH</h1>
+
+    <div style="display: flex; justify-content: center; font-size: xx-large; color: #FFF;">
+      <h1 id="min">0</h1> <span>m</span>
+      <h1>:</h1>
+      <h1 id="seconds">0</h1> <span>s</span>
+      <h1>:</h1>
+      <h1 id="ms">00</h1> <span>ms</span>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 10px;">
+        <button style="text-decoration: NONE; COLOR: #FFF; BACKGROUND: #8abe56; padding: 13px 24px; border-radius: 40px; cursor: pointer; border: 2px solid #fff;" id="start_btn" onclick="start ()">Start</button>
+        <button style="text-decoration: NONE; COLOR: #FFF; BACKGROUND: #8abe56; padding: 13px 24px; border-radius: 40px; cursor: pointer; border: 2px solid #fff;" onclick="stop ()">Stop</button>
+        <button style="text-decoration: NONE; COLOR: #FFF; BACKGROUND: #8abe56; padding: 13px 24px; border-radius: 40px; cursor: pointer; border: 2px solid #fff;" onclick="reset ()">Reset</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
